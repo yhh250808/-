@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int findmcm(int a, int b)//ÕÒµ½aºÍbµÄ×îÐ¡¹«±¶Êý£¨¸ÄÓÃÕ·×ªÏà³ý·¨£©
+int findmcm(int a, int b)//æ‰¾åˆ°aå’Œbçš„æœ€å°å…¬å€æ•°ï¼ˆæ”¹ç”¨è¾—è½¬ç›¸é™¤æ³•ï¼‰
 {
 	int mul = a*b;
 	if (b > a){
