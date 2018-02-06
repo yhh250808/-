@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int findmcm(int a, int b)//找到a和b的最小公倍数（相减法找最大公约数，再用a*b除以它）
+int findmcm(int a, int b)//鎵惧埌a鍜宐鐨勬渶灏忓叕鍊嶆暟锛堢浉鍑忔硶鎵炬渶澶у叕绾︽暟锛屽啀鐢╝*b闄や互瀹冿級
 {
 	int mul = a*b;
 	while (true){
@@ -11,7 +11,7 @@ int findmcm(int a, int b)//找到a和b的最小公倍数（相减法找最大公约数，再用a*b除以
 	}
 }
 
-int findmcm(int n, int *a)//找到输入元素的最小公倍数
+int findmcm(int n, int *a)//鎵惧埌杈撳叆鍏冪礌鐨勬渶灏忓叕鍊嶆暟
 {
 	if (n == 1)return a[0];
 	if (n == 2)return findmcm(a[0], a[1]);
@@ -32,7 +32,7 @@ int main()
 	while (n&&m){
 		sum = 0;
 		for (int i = 0; i < n; i++)cin >> a[i];
-		mcm = findmcm(n, a);//mcm为最小公倍数
+		mcm = findmcm(n, a);//mcm涓烘渶灏忓叕鍊嶆暟
 		for (int i = 0; i < n; i++)sum += (mcm / a[i]);
 		if (m%sum){
 			cout << "Can't Solve" << endl;
