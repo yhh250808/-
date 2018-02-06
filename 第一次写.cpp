@@ -45,6 +45,5 @@ int main()
 		}
 		cin >> m >> n;
 	}
-	system("pause");
 	return 0;
 }
